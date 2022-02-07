@@ -1,9 +1,16 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(word){
+  const backswardWord = word.toLowerCase().split("").reverse().join("") 
+  if (backswardWord === word) {
+    return true
+  } 
+  else {
+    return false
+  }
 }
-
 /* 
   Add your pseudocode here
+  1.Create a variable that converts the word to lowercase, splits the word, reverses the letter and then joins the letters back together
+  2.Create an if statement that if the backwards word and the original word are the same, return true
 */
 
 /*
